@@ -78,8 +78,17 @@ To load the data from `product.csv` into the `product` table and start the serve
    ```
 This will load the product.csv data into the product table and simultaneously start the server.
 
-## Performance Results
+## Running Performance Tests
 
+To run your own performance testing, use the following command:
+
+```bash
+go run compare/compare.go
+```
+Make sure you have the server running before executing the test.
+Feel free to modify the test in compare/compare.go. Currently, it is only testing with 100 requests. You can adjust the number of requests or other test parameters based on your needs.
+
+## Performance Results
 Here are the performance benchmarks for 100 requests, showing the time taken for both cached and non-cached operations:
 
 ### Fetching 1 Product 100 Times:
