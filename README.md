@@ -2,6 +2,22 @@
 
 This project demonstrates how Redis can improve the speed of database operations by caching responses. It compares the performance of database operations with and without Redis caching.
 
+## Requirements
+
+Before running the project, ensure the following are installed either **locally** on your computer or **set up in the cloud**:
+
+- **Redis**: You need a Redis instance running. You can:
+  - Download Redis locally from the [official Redis website](https://redis.io/download).
+  - Or use a cloud-hosted Redis instance (e.g., AWS ElastiCache, Redis Cloud).
+
+- **PostgreSQL**: You need a PostgreSQL database. You can:
+  - Download PostgreSQL locally from the [official PostgreSQL website](https://www.postgresql.org/download/).
+  - Or use a cloud-hosted PostgreSQL instance (e.g., AWS RDS, Google Cloud SQL).
+
+- **Golang**: Install Go on your machine. You can download it from the [official Go website](https://golang.org/dl/).
+
+Make sure the environment variables (DB credentials, Redis host/port, etc.) are set properly based on your setup.
+
 ## How It Works
 
 1. The project sets up a PostgreSQL database and a Redis cache.
@@ -25,18 +41,18 @@ This project demonstrates how Redis can improve the speed of database operations
 ## Setup
 
 1. Clone the repository:
-   ````
+   ```
    git clone https://github.com/yourusername/redis-caching-test.git
    cd redis-caching-test
    ```
 
 2. Install dependencies:
-   ````
+   ```
    go mod tidy
    ```
 
 3. Set up your environment variables in a `.env` file:
-   ````
+   ```
    HOST=your_db_host
    USER=your_db_user
    PASSWORD=your_db_password
